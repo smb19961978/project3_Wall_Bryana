@@ -1,0 +1,309 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+body{
+   
+    font-family: "montserrat", sans-serif; 
+    font-size: 16px; 
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.index{
+     background-image: url(photos/forest.jpg);
+     height: 100vh; 
+}
+
+
+nav{
+    
+    background-color: transparent; 
+    width: 100%; 
+   
+
+}
+
+nav ul li{
+	
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #005826; 
+    font-weight: bold;
+    padding: 2% ; 
+    
+}
+
+a{
+	list-style-type: none;
+	text-decoration: none;
+     
+    
+}
+
+
+li a:visited{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ a:hover li{
+    text-decoration: underline; 
+}
+
+.menu li{
+    color: white;
+}
+
+#homepage{
+    color: white; 
+    width: 90%; 
+    margin: auto; 
+    font-size: 2em; 
+    padding-top: 10%; 
+     
+}
+
+main img{
+    width: 100%; 
+    
+}
+
+.leaf{
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+
+main p{
+    padding: 2%; 
+}
+
+h1{
+    color: #c69c6d;
+    padding-top: 5%; 
+    padding-left: 2%; 
+}
+
+h2{
+    color: #005826;
+    padding: 2%; 
+}
+
+.container {
+    position: relative;
+   
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay:hover .image {
+  opacity: 0.3;
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* Mr. Owl photo overlay*/
+
+.text-mr {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.middle-mr {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+
+@media (min-width:1024px){
+    nav li{
+        display: inline;
+        width: 100%; 
+}
+    
+   ul{
+        text-align: center;
+        padding-top: 4%; 
+}
+    
+    h1{
+        padding-bottom: 4%; 
+}
+    #symbolism-img{
+        width: 100%; 
+    }
+       
+    #photogrid img{
+        width: 50%; 
+    }
+    
+    main img{
+        width: 25%; 
+    }
+    
+    
+    #about-text p, h2{
+        width: 80%; 
+        
+    }
+    
+    
+    #popculture-text p{
+        width: 50%; 
+       
+    }
+    
+    /* Navigation */
+    
+    
+    div.container{
+    font-family: "montserrat";
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+    padding: 0%; 
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Montserrat;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+    
+    /* Top and Bottom borders go out */
+div .topBotomBordersOut a:before, div .topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 25%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: block;
+  padding-left: 2%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+    
+
+}
+
+
+
