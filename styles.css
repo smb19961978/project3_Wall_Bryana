@@ -72,10 +72,19 @@ li a:visited{
      
 }
 
-main img{
-    width: 100%; 
+figure{
+    width: 100%
+    
     
 }
+
+
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 .leaf{
     width: auto;
@@ -119,11 +128,15 @@ h2{
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.overlay{
+        position: relative;
 }
 
 .overlay:hover .image {
@@ -141,51 +154,18 @@ h2{
   padding: 16px 32px;
 }
 
-/* Mr. Owl photo overlay*/
-
-.text-mr {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+.current{
+    text-decoration: line-through;
+    
 }
 
-.middle-mr {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+
+@media (min-width:600px){
+    figure{
+        width: 45%; 
+        
+    }
 }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
 
 
 @media (min-width:1024px){
@@ -205,26 +185,14 @@ h2{
     #symbolism-img{
         width: 100%; 
     }
-       
-    #photogrid img{
-        width: 50%; 
-    }
-    
-    main img{
-        width: 25%; 
-    }
-    
+
+
     
     #about-text p, h2{
         width: 80%; 
         
     }
     
-    
-    #popculture-text p{
-        width: 50%; 
-       
-    }
     
     /* Navigation */
     
@@ -289,19 +257,23 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
   backface-visibility: hidden;
   display: block;
   padding-left: 2%;
+  margin: auto;
 }
 
 .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 60%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+ 
     
+ 
 
 }
 
