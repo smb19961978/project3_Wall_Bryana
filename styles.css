@@ -72,7 +72,7 @@ li a:visited{
      
 }
 
-figure{
+figure img{
     width: 100%
     
     
@@ -101,6 +101,7 @@ h1{
     color: #c69c6d;
     padding-top: 5%; 
     padding-left: 2%; 
+    padding-bottom: 5%; 
 }
 
 h2{
@@ -123,6 +124,10 @@ h2{
 
 }
 
+img .image{
+    max-width: 350px; 
+}
+
 
 .middle {
   transition: .5s ease;
@@ -141,6 +146,7 @@ h2{
 
 .overlay:hover .image {
   opacity: 0.3;
+  
 }
 
 .overlay:hover .middle {
@@ -157,6 +163,12 @@ h2{
 .current{
     text-decoration: line-through;
     
+}
+
+@media (min-width:350px){
+    img{
+        max-width: 350px; 
+    }
 }
 
 
@@ -258,6 +270,7 @@ div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
   display: block;
   padding-left: 2%;
   margin: auto;
+  
 }
 
 .middle {
