@@ -72,13 +72,6 @@ li a:visited{
      
 }
 
-figure img{
-    width: 100%
-    
-    
-}
-
-
 .image-grid{
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +121,10 @@ img .image{
     max-width: 350px; 
 }
 
+#symbolism{
+    width: 100%;
+}
+
 
 .middle {
   transition: .5s ease;
@@ -163,12 +160,6 @@ img .image{
 .current{
     text-decoration: line-through;
     
-}
-
-@media (min-width:350px){
-    img{
-        max-width: 350px; 
-    }
 }
 
 
