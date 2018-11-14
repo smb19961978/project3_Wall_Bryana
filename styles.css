@@ -17,6 +17,12 @@ body{
     flex-direction: column;
 }
 
+.logo{
+    width: 200px; 
+    display: inline-block;
+    overflow: hidden;
+}
+
 .index{
      background-image: url(photos/forest.jpg);
      height: 100vh; 
@@ -31,7 +37,7 @@ nav{
 
 }
 
-nav ul li{
+nav ul li a{
 	
     list-style-type: none;
     text-decoration: none;
@@ -39,14 +45,11 @@ nav ul li{
     color: #005826; 
     font-weight: bold;
     padding: 2% ; 
-    
 }
 
 a{
 	list-style-type: none;
-	text-decoration: none;
-     
-    
+	text-decoration: none; 
 }
 
 
@@ -55,12 +58,13 @@ li a:visited{
     text-decoration: none;
 }
 
- a:hover li{
+li a:hover {
     text-decoration: underline; 
 }
 
 .menu li{
     color: white;
+    font-family: "montserrat", sans-serif; 
 }
 
 #homepage{
@@ -172,27 +176,37 @@ img .image{
 
 
 @media (min-width:1024px){
-    nav li{
-        display: inline;
-        width: 100%; 
+.logo {
+  width: 200px;
+  vertical-align: middle;
+  padding-right: 18%;
 }
-    
-   ul{
-        text-align: center;
-        padding-top: 4%; 
-}
-    
-    h1{
-        padding-bottom: 4%; 
-}
-    #symbolism-img{
-        width: 100%; 
-    }
 
+ul {
+  display: inline;
+  list-style: none;
+  
+}
+
+nav{
+    padding-top: 5%;
+}
+    
+li {
+  display: inline;  
+ 
+} 
+   
+h1{
+  padding-bottom: 4%; 
+}
+#symbolism-img{
+    width: 100%; 
+}
 
     
-    #about-text p, h2{
-        width: 80%; 
+#about-text p, h2{
+    width: 80%; 
         
     }
     
